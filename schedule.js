@@ -448,7 +448,7 @@ const getDateMsg = () => {
   const weekday = weekdays[day];
   const month = now.getUTCMonth();
   const year = now.getFullYear();
-  const msg = `Даршан ${date} ${months[month]} ${year}`;
+  const msg = `📅 Даршан ${date} ${months[month]} ${year}`;
   return msg;
 };
 const getEndingOfTheWord = (names, time = 'past') => {
