@@ -176,7 +176,11 @@
                 option.selected = selectedValues.includes(option.value);
                 select.appendChild(option);
             }
-            $( `#${id}` ).select2( { theme: 'bootstrap-5' } );
+            $( `#${id}` ).select2( { 
+                theme: 'bootstrap-5',
+                placeholder: 'Оберіть відданного',
+                allowClear: true
+            } );
         }
 
         function copyToClipboard() {
