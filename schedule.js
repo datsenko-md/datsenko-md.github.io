@@ -114,6 +114,8 @@ const d = {
   AntonKrivokorytov:        { gender: 'прабгу', id: 'AntonKrivokorytov', name: 'Антон Кривокоритов' },
   Lochana:                  { gender: 'прабгу', id: 'Lochana', name: 'Лочана' },
   NitayGaurachandra:        { gender: 'прабгу', id: 'NitayGaurachandra', name: 'Нітай Гаурачандра' },
+  VedantaChaitanya:         { gender: 'прабгу', id: 'VedantaChaitanya', name: "Веданта Чайтан'я" },
+  YuriyVarava:              { gender: 'прабгу', id: 'YuriyVarava', name: 'Юрій Варава' },
 };
 const assistantsDefault = {
   Monday: [
