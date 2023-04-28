@@ -77,8 +77,8 @@ const d = {
   ShyamaKumari:             { gender: 'матаджі', id: 'ShyamaKumari', name: "Ш'яма Кумарі" },
   LileshvariGaurangi:       { gender: 'матаджі', id: 'LileshvariGaurangi', name: 'Лілешварі Гаурангі' },
   OlgaStremidlovska:        { gender: 'матаджі', id: 'OlgaStremidlovska', name: 'Ольга Стремідловська' },
-  Elena:                    { gender: 'матаджі', id: 'Elena', name: 'Олена' }, // Узнать у м. Тани
-  Marina:                   { gender: 'матаджі', id: 'Marina', name: 'Марина' }, // Узнать у м. Тани
+  ElenaMurashova:           { gender: 'матаджі', id: 'ElenaMurashova', name: 'Олена Мурашова' },
+  MarinaKoltsova:           { gender: 'матаджі', id: 'MarinaKoltsova', name: 'Марина Кольцова' },
   KseniyaPerezdrienko:      { gender: 'матаджі', id: 'KseniyaPerezdrienko', name: 'Ксенія Перездрієнко' },
   
   IvanChamkin:              { gender: 'прабгу', id: 'IvanChamkin', name: 'Іван Чамкін' },
@@ -86,7 +86,7 @@ const d = {
   Mahadyuti:                { gender: 'прабгу', id: 'Mahadyuti', name: "Махад'юті" },
   AleksandrFedorina:        { gender: 'прабгу', id: 'AleksandrFedorina', name: 'Олександр Федорина' },
   IgorPerezdrienko:         { gender: 'прабгу', id: 'IgorPerezdrienko', name: 'Ігор Перездрієнко' },
-  Kirill:                   { gender: 'прабгу', id: 'Kirill', name: 'Кирило' }, // Кирилл, еоторый раздает воскреску
+  KirillStepanyuk:          { gender: 'прабгу', id: 'KirillStepanyuk', name: 'Кирило Степанюк' },
   Harinamanrita:            { gender: 'прабгу', id: 'Harinamanrita', name: 'Харінамамріта' },
   RamaRupa:                 { gender: 'прабгу', id: 'RamaRupa', name: 'Рама Рупа' },
   ArchaVigraha:             { gender: 'прабгу', id: 'ArchaVigraha', name: 'Арча Віграха' },
@@ -125,7 +125,7 @@ const assistantsDefault = {
     d.AnastasiyaSkorobagata,
     d.TatyanaCherevatenko,
     d.OlgaStremidlovska,
-    d.Elena,
+    d.ElenaMurashova,
     d.MaksimDatsenko,
   ],
   Tuesday: [
@@ -163,7 +163,7 @@ const assistantsDefault = {
     d.OlgaStremidlovska,
     d.AntonKrivokorytov,
     d.Lochana,
-    d.Marina,
+    d.MarinaKoltsova,
     d.KseniyaPerezdrienko,
   ],
   Sunday: [
@@ -190,7 +190,7 @@ const spChangeClothesDefault = {
   Thursday:   [ d.AleksandrFedorina ],
   Friday:     [ d.IvanChamkin ],
   Saturday:   [ d.IgorPerezdrienko ],
-  Sunday:     [ d.Kirill ],
+  Sunday:     [ d.KirillStepanyuk ],
 };
 const paraphernaliaCleaningDefault = {
   Monday:     [  ],
