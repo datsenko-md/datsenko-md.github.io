@@ -185,7 +185,6 @@ const spVyasasanaDefault = {
 const spChangeClothesDefault = {
   Monday:     [ d.IvanChamkin ],
   Tuesday:    [ d.VitaliyBabenko ],
-  // Tuesday:    [ d.AnangaKishori, d.VenuRati ],
   Wednesday:  [ d.Mahadyuti ],
   Thursday:   [ d.AleksandrFedorina ],
   Friday:     [ d.IvanChamkin ],
@@ -492,15 +491,9 @@ const getEndingOfTheWord = (names, time = 'past') => {
 const getPujaMorningMsg = ({ pujaMorningJBS, pujaMorningGN }) => {
   const namesPartJBS = getNames(pujaMorningJBS);
   const namesPartGN = getNames(pujaMorningGN);
-  // let awakeningNamesPartJBS = getNames(names.AwakeningJBS);
-  // let awakeningNamesPartGN = getNames(names.AwakeningGN);
-  // awakeningNamesPartJBS = awakeningNamesPartJBS === '' ? '' : `,\n(${awakeningNamesPartJBS} - пробудж.)`;
-  // awakeningNamesPartGN = awakeningNamesPartGN === '' ? '' : `,\n(${awakeningNamesPartGN} - пробудж.)`;
   const msg = `🔸Вранці Божествам служили:\n`
   + `ДБС: ${namesPartJBS} та\n`
-  // + `ДБС: ${namesPartJBS}${awakeningNamesPartJBS} та\n`
   + `ГН: ${namesPartGN}`;
-  // + `ГН: ${namesPartGN}${awakeningNamesPartGN}`;
   return msg;
 };
 const getKitchenBreakfastMsg = (kitchenBreakfast) => {
