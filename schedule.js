@@ -192,6 +192,15 @@ const spChangeClothesDefault = {
   Saturday:   [ d.IgorPerezdrienko ],
   Sunday:     [ d.Kirill ],
 };
+const paraphernaliaCleaningDefault = {
+  Monday:     [  ],
+  Tuesday:    [ d.AnatoliyMotsygailo, d.IlyaVasilchenko ],
+  Wednesday:  [  ],
+  Thursday:   [  ],
+  Friday:     [  ],
+  Saturday:   [  ],
+  Sunday:     [  ],
+};
 const garlandsDefault = {
   Monday: {
     BGN: [ d.Sundari, d.Rasalika ],
@@ -428,7 +437,8 @@ const defaultSchedule = {
   garlandsBSP: garlandsDefault[weekday].BSP,
   clothes: spChangeClothesDefault[weekday],
   vyasasana: spVyasasanaDefault[weekday],
-  assistants: assistantsDefault[weekday]
+  assistants: assistantsDefault[weekday],
+  paraphernaliaCleaning: paraphernaliaCleaningDefault[weekday],
 };
 
 const getNames = (devotees, case_ = 'nominative') => {
@@ -565,6 +575,15 @@ const getAssistantsMsg = (assistants) => {
   const msg = `🔸Допомагає поклонятися Господу команда помічників до якої входять:\n${namesPart}`;
   return msg;
 };
+const getParaphernaliaCleaningMsg = (paraphernaliaCleaning) => {
+  if (paraphernaliaCleaning.length === 0) {
+    return '';
+  }
+  const namesPart = getNames(paraphernaliaCleaning);
+  const ending = getEndingOfTheWord(vyasasana);
+  const msg = `🔸Почисти${ending} параферналії Божеств\n${namesPart}`;
+  return msg;
+};
 const generateSchedule = (devotees) => {
   const {
     pujaMorningJBS,
@@ -584,6 +603,7 @@ const generateSchedule = (devotees) => {
     clothes,
     vyasasana,
     assistants,
+    paraphernaliaCleaning,
   } = devotees;
 
   const schedule = [];
@@ -599,6 +619,9 @@ const generateSchedule = (devotees) => {
 
   const kitchenDinnerMsg = getKitchenDinnerMsg(kitchenDinner);
   schedule.push(kitchenDinnerMsg);
+
+  const paraphernaliaCleaningMsg = getParaphernaliaCleaningMsg(paraphernaliaCleaning);
+  schedule.push(paraphernaliaCleaningMsg);
 
   const pujaNoonMsg = getPujaNoonMsg({ pujaNoonJBS, pujaNoonGN });
   schedule.push(pujaNoonMsg);
@@ -618,7 +641,7 @@ const generateSchedule = (devotees) => {
   const assistantsMsg = getAssistantsMsg(assistants);
   schedule.push(assistantsMsg);
 
-  return schedule.join("\n\n");
+  return schedule.filter((msg) => msg !== '').join("\n\n");
 };
 
 // export { generateSchedule, defaultSchedule };

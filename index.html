@@ -139,7 +139,14 @@
                 <div class="row mb-3">
                     <div class="col-xs-12 col-md-6">
                         <div class="row mb-3 ">
+                            <h3 class="text-center fw-normal fst-italic">- Помічники пуджарі -</h3>
                             <select class="form-select" multiple id="assistants"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Чистка парафеналій -</h3>
+                            <select class="form-select" multiple id="paraphernaliaCleaning"></select>
                         </div>
                     </div>
                 </div>
@@ -224,6 +231,7 @@
                 clothes: getSelectValues(document.getElementById("clothes")).map(getDevoteeById), 
                 vyasasana: getSelectValues(document.getElementById("vyasasana")).map(getDevoteeById), 
                 assistants: getSelectValues(document.getElementById("assistants")).map(getDevoteeById), 
+                paraphernaliaCleaning: getSelectValues(document.getElementById("paraphernaliaCleaning")).map(getDevoteeById), 
             };
             document.getElementById("result").value = generateSchedule(actualSchedule);
         }
