@@ -116,6 +116,9 @@ const d = {
   NitayGaurachandra:        { gender: 'прабгу', id: 'NitayGaurachandra', name: 'Нітай Гаурачандра' },
   VedantaChaitanya:         { gender: 'прабгу', id: 'VedantaChaitanya', name: "Веданта Чайтан'я" },
   YuriyVarava:              { gender: 'прабгу', id: 'YuriyVarava', name: 'Юрій Варава' },
+  IlyaVasilchenko:          { gender: 'прабгу', id: 'IlyaVasilchenko', name: 'Ілля Васильченко' },
+  SadhuSeva:                { gender: 'прабгу', id: 'SadhuSeva', name: 'Садху Сева' },
+  AnatoliyMotsygailo:       { gender: 'прабгу', id: 'AnatoliyMotsygailo', name: 'Анатолій Моцигайло' },
 };
 const assistantsDefault = {
   Monday: [
@@ -288,7 +291,7 @@ const pujaDefault = {
   Monday: {
     morning: {
       JBS:  [ d.YashodaKumar ],
-      GN:   [ d.RamaVijay ],
+      GN:   [ d.RamVijay ],
     },
     
     noon: {
