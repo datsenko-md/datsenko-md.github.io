@@ -95,7 +95,7 @@ const d = {
   TushtaKrishna:            { gender: 'прабгу', id: 'TushtaKrishna', name: 'Тушта Крішна' },
   SudhaKantha:              { gender: 'прабгу', id: 'SudhaKantha', name: 'Судха Кантха' },
   YashodaKumar:             { gender: 'прабгу', id: 'YashodaKumar', name: 'Яшода Кумар' },
-  RamaVijay:                { gender: 'прабгу', id: 'RamaVijay', name: 'Рама Віджай' },
+  RamVijay:                 { gender: 'прабгу', id: 'RamVijay', name: 'Рам-Віджай' },
   Yogeshvara:               { gender: 'прабгу', id: 'Yogeshvara', name: 'Йогешвара' },
   AnupamGovinda:            { gender: 'прабгу', id: 'AnupamGovinda', name: 'Анупам Говінда' },
   Vrindaranya:              { gender: 'прабгу', id: 'Vrindaranya', name: "Вріндаран'я" },
