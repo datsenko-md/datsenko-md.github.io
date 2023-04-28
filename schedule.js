@@ -360,7 +360,7 @@ const pujaDefault = {
   Friday: {
     morning: {
       JBS:  [ d.VrajaBhakti ],
-      GN:   [ d.DhruvaMaharaj ],
+      GN:   [ d.DhruvaMaharaj, d.SadhuSeva ],
     },
   
     noon: {
