@@ -129,6 +129,7 @@ const assistantsDefault = {
     d.OlgaStremidlovska,
     d.ElenaMurashova,
     d.MaksimDatsenko,
+    d.EvgeniyBayruk,
   ],
   Tuesday: [
     d.VanamaliGovinda,
