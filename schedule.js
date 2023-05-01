@@ -119,6 +119,8 @@ const d = {
   IlyaVasilchenko:          { gender: "прабгу", id: "IlyaVasilchenko", name: "Ілля Васильченко" },
   SadhuSeva:                { gender: "прабгу", id: "SadhuSeva", name: "Садгу Сева" },
   AnatoliyMotsygailo:       { gender: "прабгу", id: "AnatoliyMotsygailo", name: "Анатолій Моцигайло" },
+  EvgeniyBayruk:            { gender: "прабгу", id: "EvgeniyBayruk", name: "Євгеній Байрук" },
+  MukundaGauranga:          { gender: "прабгу", id: "MukundaGauranga", name: "Мукунда Ґауранґа" },
 };
 const assistantsDefault = {
   Monday: [
