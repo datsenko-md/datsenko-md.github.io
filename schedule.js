@@ -187,11 +187,11 @@ const spVyasasanaDefault = {
   Sunday:     [ d.Ragini, d.AnastasiyaPerezdriyenko],
 };
 const spChangeClothesDefault = {
-  Monday:     [ d.IvanChamkin ],
+  Monday:     [ d.VrajaBhakti ],
   Tuesday:    [ d.VitaliyBabenko ],
   Wednesday:  [ d.Mahadyuti ],
-  Thursday:   [ d.AleksandrFedorina ],
-  Friday:     [ d.IvanChamkin ],
+  Thursday:   [ d.YuriyVarava ],
+  Friday:     [ d.AleksandrFedorina ],
   Saturday:   [ d.IgorPerezdrienko ],
   Sunday:     [ d.KirillStepanyuk ],
 };
