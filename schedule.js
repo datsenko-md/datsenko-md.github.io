@@ -32,6 +32,7 @@ const d = {
   YuliaStepanyuk:           { gender: "матаджі", id: "YuliaStepanyuk", name: "Юлія Степанюк" },
   AcyutaSakhi:              { gender: "матаджі", id: "AcyutaSakhi", name: "Ач'юта Сакхі" },
   LiliyaHohryakova:         { gender: "матаджі", id: "LiliyaHohryakova", name: "Лілія Хохрякова" },
+  LiliyaMishonova:          { gender: "матаджі", id: "LiliyaMishonova", name: "Лілія Мішонова" },
   ViktoriyaSkakun:          { gender: "матаджі", id: "ViktoriyaSkakun", name: "Вікторія Скакун" },
   Tatyana:                  { gender: "матаджі", id: "Tatyana", name: "Тетяна" }, // Узнать у м. Ювати Расарани
   YuliyaBerezkina:          { gender: "матаджі", id: "YuliyaBerezkina", name: "Юлія Березкіна" },
@@ -144,7 +145,7 @@ const assistantsDefault = {
     d.NataliyaGavelovskaya,
     d.NataliyaVyunkovskaya,
     d.OlgaStremidlovska,
-    d.LiliyaHohryakova,
+    d.LiliyaMishonova,
     d.MihailDerkach,
     d.MaksimDatsenko,
   ],
