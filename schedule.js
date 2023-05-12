@@ -111,7 +111,7 @@ const d = {
   IgorMorozov:              { gender: "прабгу", id: "IgorMorozov", name: "Ігор Морозов" },
   MihailDerkach:            { gender: "прабгу", id: "MihailDerkach", name: "Михайло Деркач" },
   OlegKalinovskiy:          { gender: "прабгу", id: "OlegKalinovskiy", name: "Олег Калиновський" },
-  Maksim:                   { gender: "прабгу", id: "Maksim", name: "Максим" }, // Максим, который строитель
+  MaksimSteshenko:          { gender: "прабгу", id: "MaksimSteshenko", name: "Максим Стешенко" },
   AntonKrivokorytov:        { gender: "прабгу", id: "AntonKrivokorytov", name: "Антон Кривокоритов" },
   Lochana:                  { gender: "прабгу", id: "Lochana", name: "Лочана" },
   NitayGaurachandra:        { gender: "прабгу", id: "NitayGaurachandra", name: "Нітай Ґаурачандра" },
@@ -122,6 +122,7 @@ const d = {
   AnatoliyMotsygailo:       { gender: "прабгу", id: "AnatoliyMotsygailo", name: "Анатолій Моцигайло" },
   EvgeniyBayruk:            { gender: "прабгу", id: "EvgeniyBayruk", name: "Євгеній Байрук" },
   MukundaGauranga:          { gender: "прабгу", id: "MukundaGauranga", name: "Мукунда Ґауранґа" },
+  IveshvaraGopal:           { gender: "прабгу", id: "IveshvaraGopal", name: "Івешвара Ґопал" },
 };
 const assistantsDefault = {
   Monday: [
@@ -160,8 +161,10 @@ const assistantsDefault = {
     d.TatyanaCherevatenko,
     d.OlgaStremidlovska,
     d.Gandhari,
-    d.Maksim,
+    d.MaksimSteshenko,
+    d.MaksimDatsenko,
     d.TatyanaCherevatenko,
+    d.NitayGaurachandra,
   ],
   Saturday: [
     d.OlgaStremidlovska,
@@ -174,7 +177,8 @@ const assistantsDefault = {
     d.EkeshvariRadha,
     d.Ragini,
     d.OlgaStremidlovska,
-    d.NitayGaurachandra,
+    d.IveshvaraGopal,
+    d.MaksimDatsenko,
   ]
 };
 const spVyasasanaDefault = {
