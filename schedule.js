@@ -575,7 +575,7 @@ const getParaphernaliaCleaningMsg = (paraphernaliaCleaning) => {
     return '';
   }
   const namesPart = getNames(paraphernaliaCleaning);
-  const ending = getEndingOfTheWord(vyasasana);
+  const ending = getEndingOfTheWord(paraphernaliaCleaning);
   const msg = `🔸Почисти${ending} параферналії Божеств\n${namesPart}`;
   return msg;
 };
