@@ -128,7 +128,6 @@ const assistantsDefault = {
   Monday: [
     d.AnastasiyaSkorobagata,
     d.TatyanaCherevatenko,
-    d.OlgaStremidlovska,
     d.ElenaMurashova,
     d.MaksimDatsenko,
     d.EvgeniyBayruk,
@@ -145,13 +144,11 @@ const assistantsDefault = {
     d.TatyanaCherevatenko,
     d.NataliyaGavelovskaya,
     d.NataliyaVyunkovskaya,
-    d.OlgaStremidlovska,
     d.LiliyaMishonova,
     d.MihailDerkach,
     d.MaksimDatsenko,
   ],
   Thursday: [
-    d.OlgaStremidlovska,
     d.EkeshvariRadha,
     d.Gandhari,
     d.AnangaKishori,
@@ -159,7 +156,6 @@ const assistantsDefault = {
   ],
   Friday: [
     d.TatyanaCherevatenko,
-    d.OlgaStremidlovska,
     d.Gandhari,
     d.MaksimSteshenko,
     d.MaksimDatsenko,
@@ -167,7 +163,6 @@ const assistantsDefault = {
     d.NitayGaurachandra,
   ],
   Saturday: [
-    d.OlgaStremidlovska,
     d.AntonKrivokorytov,
     d.Lochana,
     d.MarinaKoltsova,
@@ -176,7 +171,6 @@ const assistantsDefault = {
   Sunday: [
     d.EkeshvariRadha,
     d.Ragini,
-    d.OlgaStremidlovska,
     d.IveshvaraGopal,
     d.MaksimDatsenko,
   ]
@@ -585,28 +579,26 @@ const getParaphernaliaCleaningMsg = (paraphernaliaCleaning) => {
   const msg = `🔸Почисти${ending} параферналії Божеств\n${namesPart}`;
   return msg;
 };
-const generateSchedule = (devotees) => {
-  const {
-    pujaMorningJBS,
-    pujaMorningGN,
-    pujaNoonJBS,
-    pujaNoonGN,
-    pujaEveningJBS,
-    pujaEveningGN,
-    kitchenBreakfast,
-    kitchenDinner,
-    garlandsBGN,
-    garlandsJBS,
-    garlandsMGN,
-    garlandsSGN,
-    garlandsSSP,
-    garlandsBSP,
-    clothes,
-    vyasasana,
-    assistants,
-    paraphernaliaCleaning,
-  } = devotees;
-
+const generateSchedule = ({
+  pujaMorningJBS,
+  pujaMorningGN,
+  pujaNoonJBS,
+  pujaNoonGN,
+  pujaEveningJBS,
+  pujaEveningGN,
+  kitchenBreakfast,
+  kitchenDinner,
+  garlandsBGN,
+  garlandsJBS,
+  garlandsMGN,
+  garlandsSGN,
+  garlandsSSP,
+  garlandsBSP,
+  clothes,
+  vyasasana,
+  assistants,
+  paraphernaliaCleaning,
+}) => {
   const schedule = [];
 
   const dateMsg = getDateMsg();
