@@ -81,6 +81,7 @@ const d = {
   ElenaMurashova:           { gender: "матаджі", id: "ElenaMurashova", name: "Олена Мурашова" },
   MarinaKoltsova:           { gender: "матаджі", id: "MarinaKoltsova", name: "Марина Кольцова" },
   KseniyaPerezdrienko:      { gender: "матаджі", id: "KseniyaPerezdrienko", name: "Ксенія Перездрієнко" }, // Ґґї
+  ViktoriyaPolovnaya:       { gender: "матаджі", id: "ViktoriyaPolovnaya", name: "Вкторія Половна" }, // Ґґї
   
   IvanChamkin:              { gender: "прабгу", id: "IvanChamkin", name: "Іван Чамкін" },
   VitaliyBabenko:           { gender: "прабгу", id: "VitaliyBabenko", name: "Віталій Бабенко" },
@@ -123,6 +124,7 @@ const d = {
   EvgeniyBayruk:            { gender: "прабгу", id: "EvgeniyBayruk", name: "Євгеній Байрук" },
   MukundaGauranga:          { gender: "прабгу", id: "MukundaGauranga", name: "Мукунда Ґауранґа" },
   IveshvaraGopal:           { gender: "прабгу", id: "IveshvaraGopal", name: "Івешвара Ґопал" },
+  ZaboraBogdan:             { gender: "прабгу", id: "ZaboraBogdan", name: "Богдан Забора" },
 };
 const assistantsDefault = {
   Monday: [
@@ -152,6 +154,7 @@ const assistantsDefault = {
     d.EkeshvariRadha,
     d.Gandhari,
     d.AnangaKishori,
+    d.ZaboraBogdan,
     d.OlegKalinovskiy,
   ],
   Friday: [
