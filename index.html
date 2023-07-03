@@ -15,6 +15,9 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
+    <script src="./users.js"></script>
+    <script src="./defaults.js"></script>
+    <script src="./messages.js"></script>
     <script src="./schedule.js"></script>
 </head>
 <body>
@@ -24,173 +27,1021 @@
             <h1>Генератор розкладу</h1>
         </div>
         <form>
-            <div class="row border d-flex justify-content-center mb-3 rounded-3 bg-light">
+            <div class="row text-center">
                 <h2 class="my-2">Пуджа</h2>
+            </div>
+            <div class="row border d-flex justify-content-center mb-3 rounded-3 bg-light">
+                <h2 class="my-2">Понеділок</h2>
                 <div class="row mb-3">
                     <div class="col-xs-12 col-md-4">
                         <div class="row mb-3">
                             <h4 class="text-center fw-normal fst-italic">- Ранок ДБС -</h4>
-                            <select class="form-select" multiple id="pujaMorningJBS"></select>
+                            <select class="form-select" multiple id="pujaMorningJBSMonday"></select>
                         </div>
                         <div class="row mb-3">
                             <h4 class="text-center fw-normal fst-italic">- Ранок НГ -</h4>
-                            <select class="form-select" multiple id="pujaMorningGN"></select>
+                            <select class="form-select" multiple id="pujaMorningGNMonday"></select>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-4">
                         <div class="row mb-3">
                             <h4 class="text-center fw-normal fst-italic">- Обід ДБС -</h4>
-                            <select class="form-select" multiple id="pujaNoonJBS"></select>
+                            <select class="form-select" multiple id="pujaNoonJBSMonday"></select>
                         </div>
                         <div class="row mb-3">
                             <h4 class="text-center fw-normal fst-italic">- Обід НГ -</h4>
-                            <select class="form-select" multiple id="pujaNoonGN"></select>
+                            <select class="form-select" multiple id="pujaNoonGNMonday"></select>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-4">
                         <div class="row mb-3">
                             <h4 class="text-center fw-normal fst-italic">- Вечір ДБС -</h4>
-                            <select class="form-select" multiple id="pujaEveningJBS"></select>
+                            <select class="form-select" multiple id="pujaEveningJBSMonday"></select>
                         </div>
                         <div class="row mb-3">
                             <h4 class="text-center fw-normal fst-italic">- Вечір НГ -</h4>
-                            <select class="form-select" multiple id="pujaEveningGN"></select>
+                            <select class="form-select" multiple id="pujaEveningGNMonday"></select>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="my-2">Вівторок</h2>
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Ранок ДБС -</h4>
+                            <select class="form-select" multiple id="pujaMorningJBSTuesday"></select>
+                        </div>
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Ранок НГ -</h4>
+                            <select class="form-select" multiple id="pujaMorningGNTuesday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Обід ДБС -</h4>
+                            <select class="form-select" multiple id="pujaNoonJBSTuesday"></select>
+                        </div>
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Обід НГ -</h4>
+                            <select class="form-select" multiple id="pujaNoonGNTuesday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Вечір ДБС -</h4>
+                            <select class="form-select" multiple id="pujaEveningJBSTuesday"></select>
+                        </div>
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Вечір НГ -</h4>
+                            <select class="form-select" multiple id="pujaEveningGNTuesday"></select>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="my-2">Середа</h2>
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Ранок ДБС -</h4>
+                            <select class="form-select" multiple id="pujaMorningJBSWednesday"></select>
+                        </div>
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Ранок НГ -</h4>
+                            <select class="form-select" multiple id="pujaMorningGNWednesday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Обід ДБС -</h4>
+                            <select class="form-select" multiple id="pujaNoonJBSWednesday"></select>
+                        </div>
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Обід НГ -</h4>
+                            <select class="form-select" multiple id="pujaNoonGNWednesday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Вечір ДБС -</h4>
+                            <select class="form-select" multiple id="pujaEveningJBSWednesday"></select>
+                        </div>
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Вечір НГ -</h4>
+                            <select class="form-select" multiple id="pujaEveningGNWednesday"></select>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="my-2">Четвер</h2>
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Ранок ДБС -</h4>
+                            <select class="form-select" multiple id="pujaMorningJBSThursday"></select>
+                        </div>
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Ранок НГ -</h4>
+                            <select class="form-select" multiple id="pujaMorningGNThursday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Обід ДБС -</h4>
+                            <select class="form-select" multiple id="pujaNoonJBSThursday"></select>
+                        </div>
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Обід НГ -</h4>
+                            <select class="form-select" multiple id="pujaNoonGNThursday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Вечір ДБС -</h4>
+                            <select class="form-select" multiple id="pujaEveningJBSThursday"></select>
+                        </div>
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Вечір НГ -</h4>
+                            <select class="form-select" multiple id="pujaEveningGNThursday"></select>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="my-2">П'ятниця</h2>
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Ранок ДБС -</h4>
+                            <select class="form-select" multiple id="pujaMorningJBSFriday"></select>
+                        </div>
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Ранок НГ -</h4>
+                            <select class="form-select" multiple id="pujaMorningGNFriday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Обід ДБС -</h4>
+                            <select class="form-select" multiple id="pujaNoonJBSFriday"></select>
+                        </div>
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Обід НГ -</h4>
+                            <select class="form-select" multiple id="pujaNoonGNFriday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Вечір ДБС -</h4>
+                            <select class="form-select" multiple id="pujaEveningJBSFriday"></select>
+                        </div>
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Вечір НГ -</h4>
+                            <select class="form-select" multiple id="pujaEveningGNFriday"></select>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="my-2">Субота</h2>
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Ранок ДБС -</h4>
+                            <select class="form-select" multiple id="pujaMorningJBSSaturday"></select>
+                        </div>
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Ранок НГ -</h4>
+                            <select class="form-select" multiple id="pujaMorningGNSaturday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Обід ДБС -</h4>
+                            <select class="form-select" multiple id="pujaNoonJBSSaturday"></select>
+                        </div>
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Обід НГ -</h4>
+                            <select class="form-select" multiple id="pujaNoonGNSaturday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Вечір ДБС -</h4>
+                            <select class="form-select" multiple id="pujaEveningJBSSaturday"></select>
+                        </div>
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Вечір НГ -</h4>
+                            <select class="form-select" multiple id="pujaEveningGNSaturday"></select>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="my-2">Недiля</h2>
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Ранок ДБС -</h4>
+                            <select class="form-select" multiple id="pujaMorningJBSSunday"></select>
+                        </div>
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Ранок НГ -</h4>
+                            <select class="form-select" multiple id="pujaMorningGNSunday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Обід ДБС -</h4>
+                            <select class="form-select" multiple id="pujaNoonJBSSunday"></select>
+                        </div>
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Обід НГ -</h4>
+                            <select class="form-select" multiple id="pujaNoonGNSunday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Вечір ДБС -</h4>
+                            <select class="form-select" multiple id="pujaEveningJBSSunday"></select>
+                        </div>
+                        <div class="row mb-3">
+                            <h4 class="text-center fw-normal fst-italic">- Вечір НГ -</h4>
+                            <select class="form-select" multiple id="pujaEveningGNSunday"></select>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row border d-flex justify-content-center mb-3 rounded-3 bg-light">
+            <div class="row text-center">
                 <h2 class="my-2">Кухня</h2>
+            </div>
+            <div class="row border d-flex justify-content-center mb-3 rounded-3 bg-light">
+                <h2 class="my-2">Понеділок</h2>
                 <div class="row mb-3">
-                    <div class="col-xs-12 col-md-6">
+                    <div class="col-xs-12 col-md-4">
                         <div class="row mb-3">
                             <h3 class="text-center fw-normal fst-italic">- Сніданок -</h3>
-                            <select class="form-select" multiple id="kitchenBreakfast"></select>
+                            <select class="form-select" multiple id="kitchenBreakfastMonday"></select>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-md-6">
+                    <div class="col-xs-12 col-md-4">
                         <div class="row mb-3">
                             <h3 class="text-center fw-normal fst-italic">- Обід -</h3>
-                            <select class="form-select" multiple id="kitchenDinner"></select>
+                            <select class="form-select" multiple id="kitchenDinnerMonday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Інше -</h3>
+                            <select class="form-select" multiple id="kitchenOtherMonday"></select>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="my-2">Вівторок</h2>
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Сніданок -</h3>
+                            <select class="form-select" multiple id="kitchenBreakfastTuesday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Обід -</h3>
+                            <select class="form-select" multiple id="kitchenDinnerTuesday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Інше -</h3>
+                            <select class="form-select" multiple id="kitchenOtherTuesday"></select>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="my-2">Середа</h2>
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Сніданок -</h3>
+                            <select class="form-select" multiple id="kitchenBreakfastWednesday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Обід -</h3>
+                            <select class="form-select" multiple id="kitchenDinnerWednesday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Інше -</h3>
+                            <select class="form-select" multiple id="kitchenOtherWednesday"></select>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="my-2">Четвер</h2>
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Сніданок -</h3>
+                            <select class="form-select" multiple id="kitchenBreakfastThursday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Обід -</h3>
+                            <select class="form-select" multiple id="kitchenDinnerThursday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Інше -</h3>
+                            <select class="form-select" multiple id="kitchenOtherThursday"></select>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="my-2">П'ятниця</h2>
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Сніданок -</h3>
+                            <select class="form-select" multiple id="kitchenBreakfastFriday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Обід -</h3>
+                            <select class="form-select" multiple id="kitchenDinnerFriday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Інше -</h3>
+                            <select class="form-select" multiple id="kitchenOtherFriday"></select>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="my-2">Субота</h2>
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Сніданок -</h3>
+                            <select class="form-select" multiple id="kitchenBreakfastSaturday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Обід -</h3>
+                            <select class="form-select" multiple id="kitchenDinnerSaturday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Інше -</h3>
+                            <select class="form-select" multiple id="kitchenOtherSaturday"></select>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="my-2">Недiля</h2>
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Сніданок -</h3>
+                            <select class="form-select" multiple id="kitchenBreakfastSunday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Обід -</h3>
+                            <select class="form-select" multiple id="kitchenDinnerSunday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Інше -</h3>
+                            <select class="form-select" multiple id="kitchenOtherSunday"></select>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row border d-flex justify-content-center mb-3 rounded-3 bg-light">
+            <div class="row text-center">
                 <h2 class="my-2">Гірлянди</h2>
+            </div>
+            <div class="row border d-flex justify-content-center mb-3 rounded-3 bg-light">
+                <h2 class="my-2">Понеділок</h2>
                 <div class="row mb-3">
                     <div class="col-xs-12 col-md-4">
                         <div class="row mb-3">
                             <h3 class="text-center fw-normal fst-italic">- ВГН -</h3>
-                            <select class="form-select" multiple id="garlandsBGN"></select>
+                            <select class="form-select" multiple id="garlandsBGNMonday"></select>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-4">
                         <div class="row mb-3">
                             <h3 class="text-center fw-normal fst-italic">- ДБС -</h3>
-                            <select class="form-select" multiple id="garlandsJBS"></select>
+                            <select class="form-select" multiple id="garlandsJBSMonday"></select>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-4">
                         <div class="row mb-3">
                             <h3 class="text-center fw-normal fst-italic">- СГН -</h3>
-                            <select class="form-select" multiple id="garlandsMGN"></select>
+                            <select class="form-select" multiple id="garlandsMGNMonday"></select>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-4">
                         <div class="row mb-3">
                             <h3 class="text-center fw-normal fst-italic">- МГН -</h3>
-                            <select class="form-select" multiple id="garlandsSGN"></select>
+                            <select class="form-select" multiple id="garlandsSGNMonday"></select>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-4">
                         <div class="row mb-3">
                             <h3 class="text-center fw-normal fst-italic">- МШП -</h3>
-                            <select class="form-select" multiple id="garlandsSSP"></select>
+                            <select class="form-select" multiple id="garlandsSSPMonday"></select>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-4">
                         <div class="row mb-3">
                             <h3 class="text-center fw-normal fst-italic">- ВШП -</h3>
-                            <select class="form-select" multiple id="garlandsBSP"></select>
+                            <select class="form-select" multiple id="garlandsBSPMonday"></select>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="my-2">Вівторок</h2>
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- ВГН -</h3>
+                            <select class="form-select" multiple id="garlandsBGNTuesday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- ДБС -</h3>
+                            <select class="form-select" multiple id="garlandsJBSTuesday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- СГН -</h3>
+                            <select class="form-select" multiple id="garlandsMGNTuesday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- МГН -</h3>
+                            <select class="form-select" multiple id="garlandsSGNTuesday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- МШП -</h3>
+                            <select class="form-select" multiple id="garlandsSSPTuesday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- ВШП -</h3>
+                            <select class="form-select" multiple id="garlandsBSPTuesday"></select>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="my-2">Середа</h2>
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- ВГН -</h3>
+                            <select class="form-select" multiple id="garlandsBGNWednesday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- ДБС -</h3>
+                            <select class="form-select" multiple id="garlandsJBSWednesday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- СГН -</h3>
+                            <select class="form-select" multiple id="garlandsMGNWednesday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- МГН -</h3>
+                            <select class="form-select" multiple id="garlandsSGNWednesday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- МШП -</h3>
+                            <select class="form-select" multiple id="garlandsSSPWednesday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- ВШП -</h3>
+                            <select class="form-select" multiple id="garlandsBSPWednesday"></select>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="my-2">Четвер</h2>
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- ВГН -</h3>
+                            <select class="form-select" multiple id="garlandsBGNThursday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- ДБС -</h3>
+                            <select class="form-select" multiple id="garlandsJBSThursday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- СГН -</h3>
+                            <select class="form-select" multiple id="garlandsMGNThursday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- МГН -</h3>
+                            <select class="form-select" multiple id="garlandsSGNThursday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- МШП -</h3>
+                            <select class="form-select" multiple id="garlandsSSPThursday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- ВШП -</h3>
+                            <select class="form-select" multiple id="garlandsBSPThursday"></select>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="my-2">П'ятниця</h2>
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- ВГН -</h3>
+                            <select class="form-select" multiple id="garlandsBGNFriday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- ДБС -</h3>
+                            <select class="form-select" multiple id="garlandsJBSFriday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- СГН -</h3>
+                            <select class="form-select" multiple id="garlandsMGNFriday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- МГН -</h3>
+                            <select class="form-select" multiple id="garlandsSGNFriday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- МШП -</h3>
+                            <select class="form-select" multiple id="garlandsSSPFriday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- ВШП -</h3>
+                            <select class="form-select" multiple id="garlandsBSPFriday"></select>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="my-2">Субота</h2>
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- ВГН -</h3>
+                            <select class="form-select" multiple id="garlandsBGNSaturday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- ДБС -</h3>
+                            <select class="form-select" multiple id="garlandsJBSSaturday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- СГН -</h3>
+                            <select class="form-select" multiple id="garlandsMGNSaturday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- МГН -</h3>
+                            <select class="form-select" multiple id="garlandsSGNSaturday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- МШП -</h3>
+                            <select class="form-select" multiple id="garlandsSSPSaturday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- ВШП -</h3>
+                            <select class="form-select" multiple id="garlandsBSPSaturday"></select>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="my-2">Недiля</h2>
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- ВГН -</h3>
+                            <select class="form-select" multiple id="garlandsBGNSunday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- ДБС -</h3>
+                            <select class="form-select" multiple id="garlandsJBSSunday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- СГН -</h3>
+                            <select class="form-select" multiple id="garlandsMGNSunday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- МГН -</h3>
+                            <select class="form-select" multiple id="garlandsSGNSunday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- МШП -</h3>
+                            <select class="form-select" multiple id="garlandsSSPSunday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- ВШП -</h3>
+                            <select class="form-select" multiple id="garlandsBSPSunday"></select>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row border d-flex justify-content-center mb-3 rounded-3 bg-light">
+            <div class="row text-center">
                 <h2 class="my-2">Шріла Прабгупада</h2>
+            </div>
+            <div class="row border d-flex justify-content-center mb-3 rounded-3 bg-light">
+                <h2 class="my-2">Понеділок</h2>
                 <div class="row mb-3">
                     <div class="col-xs-12 col-md-6">
                         <div class="row mb-3">
                             <h3 class="text-center fw-normal fst-italic">- Переодягання -</h3>
-                            <select class="form-select" multiple id="clothes"></select>
+                            <select class="form-select" multiple id="clothesMonday"></select>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="my-2">Вівторок</h2>
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Переодягання -</h3>
+                            <select class="form-select" multiple id="clothesTuesday"></select>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="my-2">Середа</h2>
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Переодягання -</h3>
+                            <select class="form-select" multiple id="clothesWednesday"></select>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="my-2">Четвер</h2>
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Переодягання -</h3>
+                            <select class="form-select" multiple id="clothesThursday"></select>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="my-2">П'ятниця</h2>
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Переодягання -</h3>
+                            <select class="form-select" multiple id="clothesFriday"></select>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="my-2">Субота</h2>
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Переодягання -</h3>
+                            <select class="form-select" multiple id="clothesSaturday"></select>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="my-2">Недiля</h2>
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Переодягання -</h3>
+                            <select class="form-select" multiple id="clothesSunday"></select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <h2 class="my-2">Помічники</h2>
+            </div>
+            <div class="row border d-flex justify-content-center mb-3 rounded-3 bg-light">
+                <h2 class="my-2">Понеділок</h2>
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="row mb-3 ">
+                            <h3 class="text-center fw-normal fst-italic">- Помічники пуджарі -</h3>
+                            <select class="form-select" multiple id="assistantsMonday"></select>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-6">
                         <div class="row mb-3">
                             <h3 class="text-center fw-normal fst-italic">- В'ясасана та букети -</h3>
-                            <select class="form-select" multiple id="vyasasana"></select>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row border d-flex justify-content-center mb-3 rounded-3 bg-light">
-                <h2 class="my-2">Помічники</h2>
-                <div class="row mb-3">
-                    <div class="col-xs-12 col-md-6">
-                        <div class="row mb-3 ">
-                            <h3 class="text-center fw-normal fst-italic">- Помічники пуджарі -</h3>
-                            <select class="form-select" multiple id="assistants"></select>
+                            <select class="form-select" multiple id="vyasasanaMonday"></select>
                         </div>
                     </div>
                     <div class="col-xs-12 col-md-6">
                         <div class="row mb-3">
                             <h3 class="text-center fw-normal fst-italic">- Чистка парафеналій -</h3>
-                            <select class="form-select" multiple id="paraphernaliaCleaning"></select>
+                            <select class="form-select" multiple id="paraphernaliaCleaningMonday"></select>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="my-2">Вівторок</h2>
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="row mb-3 ">
+                            <h3 class="text-center fw-normal fst-italic">- Помічники пуджарі -</h3>
+                            <select class="form-select" multiple id="assistantsTuesday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- В'ясасана та букети -</h3>
+                            <select class="form-select" multiple id="vyasasanaTuesday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Чистка парафеналій -</h3>
+                            <select class="form-select" multiple id="paraphernaliaCleaningTuesday"></select>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="my-2">Середа</h2>
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="row mb-3 ">
+                            <h3 class="text-center fw-normal fst-italic">- Помічники пуджарі -</h3>
+                            <select class="form-select" multiple id="assistantsWednesday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- В'ясасана та букети -</h3>
+                            <select class="form-select" multiple id="vyasasanaWednesday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Чистка парафеналій -</h3>
+                            <select class="form-select" multiple id="paraphernaliaCleaningWednesday"></select>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="my-2">Четвер</h2>
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="row mb-3 ">
+                            <h3 class="text-center fw-normal fst-italic">- Помічники пуджарі -</h3>
+                            <select class="form-select" multiple id="assistantsThursday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- В'ясасана та букети -</h3>
+                            <select class="form-select" multiple id="vyasasanaThursday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Чистка парафеналій -</h3>
+                            <select class="form-select" multiple id="paraphernaliaCleaningThursday"></select>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="my-2">П'ятниця</h2>
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="row mb-3 ">
+                            <h3 class="text-center fw-normal fst-italic">- Помічники пуджарі -</h3>
+                            <select class="form-select" multiple id="assistantsFriday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- В'ясасана та букети -</h3>
+                            <select class="form-select" multiple id="vyasasanaFriday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Чистка парафеналій -</h3>
+                            <select class="form-select" multiple id="paraphernaliaCleaningFriday"></select>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="my-2">Субота</h2>
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="row mb-3 ">
+                            <h3 class="text-center fw-normal fst-italic">- Помічники пуджарі -</h3>
+                            <select class="form-select" multiple id="assistantsSaturday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- В'ясасана та букети -</h3>
+                            <select class="form-select" multiple id="vyasasanaSaturday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Чистка парафеналій -</h3>
+                            <select class="form-select" multiple id="paraphernaliaCleaningSaturday"></select>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="my-2">Недiля</h2>
+                <div class="row mb-3">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="row mb-3 ">
+                            <h3 class="text-center fw-normal fst-italic">- Помічники пуджарі -</h3>
+                            <select class="form-select" multiple id="assistantsSunday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- В'ясасана та букети -</h3>
+                            <select class="form-select" multiple id="vyasasanaSunday"></select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="row mb-3">
+                            <h3 class="text-center fw-normal fst-italic">- Чистка парафеналій -</h3>
+                            <select class="form-select" multiple id="paraphernaliaCleaningSunday"></select>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="row text-center">
+                <h2 class="my-2">Розклад</h2>
+                <label for="date" class="col-1 col-form-label">Дата початку тижня</label>
+                <div class="col-5">
+                    <div class="input-group date" id="datepicker">
+                        <input type="date" class="form-control" id="date"/>
+                        <span class="input-group-append">
+                        <span class="input-group-text bg-light d-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                              </svg>
+                        </span>
+                        </span>
+                    </div>
+                </div>
+                <!-- <button type="button" class="btn btn-primary d-inline-block me-3" onclick="createSchedule()">Генерувати</button> -->
+            </div>
             <div class="row border d-flex justify-content-center mb-3 rounded-3 bg-light">
                 <div class="col-md-12 my-3">
-                    <h3 class="d-inline-block me-3">Розклад</h3>
-                    <button type="button" class="btn btn-primary d-inline-block me-3" onclick="createSchedule()">Генерувати</button>
-                    <button type="button" class="btn btn-success" onclick="copyToClipboard()">Копіювати</button>
+                    <h3 class="d-inline-block me-3">Понеділок</h3>
+                    <button type="button" class="btn btn-primary d-inline-block me-3" onclick="createSchedule('Monday')">Генерувати</button>
+                    <button type="button" class="btn btn-success" onclick="copyToClipboard('Monday')">Копіювати</button>
 
                 </div>
                 <div class="mb-3">
-                    <textarea class="form-control" rows="42" id="result"></textarea>
+                    <textarea class="form-control" rows="42" id="resultMonday"></textarea>
+                </div>
+            </div>
+            <div class="row border d-flex justify-content-center mb-3 rounded-3 bg-light">
+                <div class="col-md-12 my-3">
+                    <h3 class="d-inline-block me-3">Вівторок</h3>
+                    <button type="button" class="btn btn-primary d-inline-block me-3" onclick="createSchedule('Tuesday')">Генерувати</button>
+                    <button type="button" class="btn btn-success" onclick="copyToClipboard('Tuesday')">Копіювати</button>
+
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="42" id="resultTuesday"></textarea>
+                </div>
+            </div>
+            <div class="row border d-flex justify-content-center mb-3 rounded-3 bg-light">
+                <div class="col-md-12 my-3">
+                    <h3 class="d-inline-block me-3">Середа</h3>
+                    <button type="button" class="btn btn-primary d-inline-block me-3" onclick="createSchedule('Wednesday')">Генерувати</button>
+                    <button type="button" class="btn btn-success" onclick="copyToClipboard('Wednesday')">Копіювати</button>
+
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="42" id="resultWednesday"></textarea>
+                </div>
+            </div>
+            <div class="row border d-flex justify-content-center mb-3 rounded-3 bg-light">
+                <div class="col-md-12 my-3">
+                    <h3 class="d-inline-block me-3">Четвер</h3>
+                    <button type="button" class="btn btn-primary d-inline-block me-3" onclick="createSchedule('Thursday')">Генерувати</button>
+                    <button type="button" class="btn btn-success" onclick="copyToClipboard('Thursday')">Копіювати</button>
+
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="42" id="resultThursday"></textarea>
+                </div>
+            </div>
+            <div class="row border d-flex justify-content-center mb-3 rounded-3 bg-light">
+                <div class="col-md-12 my-3">
+                    <h3 class="d-inline-block me-3">П'ятниця</h3>
+                    <button type="button" class="btn btn-primary d-inline-block me-3" onclick="createSchedule('Friday')">Генерувати</button>
+                    <button type="button" class="btn btn-success" onclick="copyToClipboard('Friday')">Копіювати</button>
+
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="42" id="resultFriday"></textarea>
+                </div>
+            </div>
+            <div class="row border d-flex justify-content-center mb-3 rounded-3 bg-light">
+                <div class="col-md-12 my-3">
+                    <h3 class="d-inline-block me-3">Субота</h3>
+                    <button type="button" class="btn btn-primary d-inline-block me-3" onclick="createSchedule('Saturday')">Генерувати</button>
+                    <button type="button" class="btn btn-success" onclick="copyToClipboard('Saturday')">Копіювати</button>
+
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="42" id="resultSaturday"></textarea>
+                </div>
+            </div>
+            <div class="row border d-flex justify-content-center mb-3 rounded-3 bg-light">
+                <div class="col-md-12 my-3">
+                    <h3 class="d-inline-block me-3">Недiля</h3>
+                    <button type="button" class="btn btn-primary d-inline-block me-3" onclick="createSchedule('Sunday')">Генерувати</button>
+                    <button type="button" class="btn btn-success" onclick="copyToClipboard('Sunday')">Копіювати</button>
+
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="42" id="resultSunday"></textarea>
                 </div>
             </div>
         </form>
         </div>
     </div>
     <script>
-        document.getElementById("result").value = generateSchedule(defaultSchedule);
-
-        const defaultSelectedValues = {};
-        for (const [key, devotees] of Object.entries(defaultSchedule)) {
-            const values = devotees.map(({ id }) => id);
-            defaultSelectedValues[key] = values;
-        }
-
-        for (const [id, selectedValues] of Object.entries(defaultSelectedValues)) {
-            const select = document.getElementById(id);
-            for (const [key, devotee] of Object.entries(d)) {
-                const option = document.createElement('option');
-                option.value = key;
-                option.innerHTML = `${devotee.name} ${devotee.gender}`;
-                option.selected = selectedValues.includes(option.value);
-                select.appendChild(option);
+        weekdays.forEach(function(day) {
+            const defaultSchedule = getDefaultSchedule(day);
+            document.getElementById(`result${day}`).value = generateSchedule(defaultSchedule);
+            
+            const defaultSelectedValues = {};
+            for (const [key, devotees] of Object.entries(defaultSchedule)) {
+                const values = devotees.map(({ id }) => id);
+                defaultSelectedValues[key] = values;
             }
-            $( `#${id}` ).select2( { 
-                theme: 'bootstrap-5',
-                placeholder: 'Оберіть відданного',
-            } );
-        }
 
-        function copyToClipboard() {
-            var copyText = document.getElementById("result");
+            for (const [id, selectedValues] of Object.entries(defaultSelectedValues)) {
+                const select = document.getElementById(`${id}${day}`);
+                for (const [key, devotee] of Object.entries(d)) {
+                    const option = document.createElement('option');
+                    option.value = key;
+                    option.innerHTML = `${devotee.name} ${devotee.gender}`;
+                    option.selected = selectedValues.includes(option.value);
+                    select.appendChild(option);
+                }
+                $( `#${id}${day}` ).select2( { 
+                    theme: 'bootstrap-5',
+                    placeholder: 'Оберіть відданного',
+                } );
+            }
+        });
+        // document.getElementById("result").value = generateSchedule(defaultSchedule);
+
+
+
+        function copyToClipboard(day = '') {
+            var copyText = document.getElementById(`result${day}`);
             copyText.select();
             copyText.setSelectionRange(0, 99999); // For mobile devices
             navigator.clipboard.writeText(copyText.value);
@@ -211,29 +1062,38 @@
             return result;
         }
 
-        function createSchedule() {
+        function getDate(weekday) {
+            const [year, month, day] = document.getElementById('date').value.split('-');
+            const monthIndex = month - 1;
+            const currentDay = +day + weekdays.indexOf(weekday);
+            const date = new Date(year, monthIndex, currentDay, 12);
+            return date;
+        }
+
+        function createSchedule(weekday) {
             const getDevoteeById = (id) => d[id];
             const actualSchedule = {
-                pujaMorningJBS: getSelectValues(document.getElementById("pujaMorningJBS")).map(getDevoteeById),
-                pujaMorningGN: getSelectValues(document.getElementById("pujaMorningGN")).map(getDevoteeById), 
-                pujaNoonJBS: getSelectValues(document.getElementById("pujaNoonJBS")).map(getDevoteeById), 
-                pujaNoonGN: getSelectValues(document.getElementById("pujaNoonGN")).map(getDevoteeById), 
-                pujaEveningJBS: getSelectValues(document.getElementById("pujaEveningJBS")).map(getDevoteeById), 
-                pujaEveningGN: getSelectValues(document.getElementById("pujaEveningGN")).map(getDevoteeById), 
-                kitchenBreakfast: getSelectValues(document.getElementById("kitchenBreakfast")).map(getDevoteeById), 
-                kitchenDinner: getSelectValues(document.getElementById("kitchenDinner")).map(getDevoteeById), 
-                garlandsBGN: getSelectValues(document.getElementById("garlandsBGN")).map(getDevoteeById), 
-                garlandsJBS: getSelectValues(document.getElementById("garlandsJBS")).map(getDevoteeById), 
-                garlandsMGN: getSelectValues(document.getElementById("garlandsMGN")).map(getDevoteeById), 
-                garlandsSGN: getSelectValues(document.getElementById("garlandsSGN")).map(getDevoteeById), 
-                garlandsSSP: getSelectValues(document.getElementById("garlandsSSP")).map(getDevoteeById), 
-                garlandsBSP: getSelectValues(document.getElementById("garlandsBSP")).map(getDevoteeById), 
-                clothes: getSelectValues(document.getElementById("clothes")).map(getDevoteeById), 
-                vyasasana: getSelectValues(document.getElementById("vyasasana")).map(getDevoteeById), 
-                assistants: getSelectValues(document.getElementById("assistants")).map(getDevoteeById), 
-                paraphernaliaCleaning: getSelectValues(document.getElementById("paraphernaliaCleaning")).map(getDevoteeById), 
+                pujaMorningJBS: getSelectValues(document.getElementById(`pujaMorningJBS${weekday}`)).map(getDevoteeById),
+                pujaMorningGN: getSelectValues(document.getElementById(`pujaMorningGN${weekday}`)).map(getDevoteeById), 
+                pujaNoonJBS: getSelectValues(document.getElementById(`pujaNoonJBS${weekday}`)).map(getDevoteeById), 
+                pujaNoonGN: getSelectValues(document.getElementById(`pujaNoonGN${weekday}`)).map(getDevoteeById), 
+                pujaEveningJBS: getSelectValues(document.getElementById(`pujaEveningJBS${weekday}`)).map(getDevoteeById), 
+                pujaEveningGN: getSelectValues(document.getElementById(`pujaEveningGN${weekday}`)).map(getDevoteeById), 
+                kitchenBreakfast: getSelectValues(document.getElementById(`kitchenBreakfast${weekday}`)).map(getDevoteeById), 
+                kitchenDinner: getSelectValues(document.getElementById(`kitchenDinner${weekday}`)).map(getDevoteeById), 
+                kitchenOther: getSelectValues(document.getElementById(`kitchenOther${weekday}`)).map(getDevoteeById), 
+                garlandsBGN: getSelectValues(document.getElementById(`garlandsBGN${weekday}`)).map(getDevoteeById), 
+                garlandsJBS: getSelectValues(document.getElementById(`garlandsJBS${weekday}`)).map(getDevoteeById), 
+                garlandsMGN: getSelectValues(document.getElementById(`garlandsMGN${weekday}`)).map(getDevoteeById), 
+                garlandsSGN: getSelectValues(document.getElementById(`garlandsSGN${weekday}`)).map(getDevoteeById), 
+                garlandsSSP: getSelectValues(document.getElementById(`garlandsSSP${weekday}`)).map(getDevoteeById), 
+                garlandsBSP: getSelectValues(document.getElementById(`garlandsBSP${weekday}`)).map(getDevoteeById), 
+                clothes: getSelectValues(document.getElementById(`clothes${weekday}`)).map(getDevoteeById), 
+                vyasasana: getSelectValues(document.getElementById(`vyasasana${weekday}`)).map(getDevoteeById), 
+                assistants: getSelectValues(document.getElementById(`assistants${weekday}`)).map(getDevoteeById), 
+                paraphernaliaCleaning: getSelectValues(document.getElementById(`paraphernaliaCleaning${weekday}`)).map(getDevoteeById), 
             };
-            document.getElementById("result").value = generateSchedule(actualSchedule);
+            document.getElementById(`result${weekday}`).value = generateSchedule(actualSchedule, getDate(weekday));
         }
     </script>
 </body>
