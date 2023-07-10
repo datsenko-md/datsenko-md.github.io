@@ -5,7 +5,7 @@ const d = {
   Gandhari:                 { gender: "матаджі", id: "Gandhari", name: "Ґандгарі" },
   YuvatiRasarani:           { gender: "матаджі", id: "YuvatiRasarani", name: "Юваті Расарані" },
   IrenGuzan:                { gender: "матаджі", id: "IrenGuzan", name: "Ірен Гузан" },
-  VisakhaSundari:           { gender: "матаджі", id: "VisakhaSundari", name: "Вішакха Сіндарі" },
+  VisakhaSundari:           { gender: "матаджі", id: "VisakhaSundari", name: "Вішакха Сундарі" },
   Ragini:                   { gender: "матаджі", id: "Ragini", name: "Раґіні" },
   IndulekhaGopi:            { gender: "матаджі", id: "IndulekhaGopi", name: "Індулекха Ґопі" },
   YaninaMelnik:             { gender: "матаджі", id: "YaninaMelnik", name: "Яніна Мельник" },
@@ -76,6 +76,8 @@ const d = {
   ShyamaLila:               { gender: "матаджі", id: "ShyamaLila", name: "Ш'яма Ліла" },
   TanuSri:                  { gender: "матаджі", id: "TanuSri", name: "Тану Шрі" },
   MadhuryaRati:             { gender: "матаджі", id: "MadhuryaRati", name: "Мадгур'я Раті" },
+  Dzhanaki:                 { gender: "матаджі", id: "Dzhanaki", name: "Джанакі" },
+  LilaSmriti:               { gender: "матаджі", id: "LilaSmriti", name: "Ліла Смріті" },
   
   IvanChamkin:              { gender: "прабгу", id: "IvanChamkin", name: "Іван Чамкін" },
   VitaliyBabenko:           { gender: "прабгу", id: "VitaliyBabenko", name: "Віталій Бабенко" },
@@ -119,4 +121,5 @@ const d = {
   MukundaGauranga:          { gender: "прабгу", id: "MukundaGauranga", name: "Мукунда Ґауранґа" },
   IveshvaraGopal:           { gender: "прабгу", id: "IveshvaraGopal", name: "Івешвара Ґопал" },
   ZaboraBogdan:             { gender: "прабгу", id: "ZaboraBogdan", name: "Богдан Забора" },
+  Damodara:                 { gender: "прабгу", id: "Damodara", name: "Дамодара" },
 };
