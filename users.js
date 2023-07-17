@@ -78,6 +78,7 @@ const d = {
   MadhuryaRati:             { gender: "матаджі", id: "MadhuryaRati", name: "Мадгур'я Раті" },
   Dzhanaki:                 { gender: "матаджі", id: "Dzhanaki", name: "Джанакі" },
   LilaSmriti:               { gender: "матаджі", id: "LilaSmriti", name: "Ліла Смріті" },
+  AnandiniPurna:            { gender: "матаджі", id: "AnandiniPurna", name: "Анандіні Пурна" },
   
   IvanChamkin:              { gender: "прабгу", id: "IvanChamkin", name: "Іван Чамкін" },
   VitaliyBabenko:           { gender: "прабгу", id: "VitaliyBabenko", name: "Віталій Бабенко" },
