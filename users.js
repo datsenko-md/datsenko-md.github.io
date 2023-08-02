@@ -79,6 +79,7 @@ const d = {
   Dzhanaki:                 { gender: "матаджі", id: "Dzhanaki", name: "Джанакі" },
   LilaSmriti:               { gender: "матаджі", id: "LilaSmriti", name: "Ліла Смріті" },
   AnandiniPurna:            { gender: "матаджі", id: "AnandiniPurna", name: "Анандіні Пурна" },
+  Alina:                    { gender: "матаджі", id: "Alina", name: "Аліна" },
   
   IvanChamkin:              { gender: "прабгу", id: "IvanChamkin", name: "Іван Чамкін" },
   VitaliyBabenko:           { gender: "прабгу", id: "VitaliyBabenko", name: "Віталій Бабенко" },
@@ -123,4 +124,6 @@ const d = {
   IveshvaraGopal:           { gender: "прабгу", id: "IveshvaraGopal", name: "Івешвара Ґопал" },
   ZaboraBogdan:             { gender: "прабгу", id: "ZaboraBogdan", name: "Богдан Забора" },
   Damodara:                 { gender: "прабгу", id: "Damodara", name: "Дамодара" },
+  Hanuman:                  { gender: "прабгу", id: "Hanuman", name: "Хануман" },
+  VladislavEmets:           { gender: "прабгу", id: "VladislavEmets", name: "Владислав Ємець" },
 };
