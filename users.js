@@ -28,7 +28,7 @@ const d = {
   MariyaSazonova:           { gender: "матаджі", id: "MariyaSazonova", name: "Марія Сазонова" },
   TariniKishori:            { gender: "матаджі", id: "TariniKishori", name: "Таріні Кішорі" },
   IrinaZhukovich:           { gender: "матаджі", id: "IrinaZhukovich", name: "Ірина Жукович" },
-  Vadzhayantimala:          { gender: "матаджі", id: "Vadzhayantimala", name: "Вайджаянтімала" },
+  Vadzhayantimala:          { gender: "матаджі", id: "Vadzhayantimala", name: "Вайджаянті Мала" },
   ViktoriyaGida:            { gender: "матаджі", id: "ViktoriyaGida", name: "Вікторія Гида" },
   TatyanaCherevatenko:      { gender: "матаджі", id: "TatyanaCherevatenko", name: "Тетяна Череватенко" },
   EkeshvariRadha:           { gender: "матаджі", id: "EkeshvariRadha", name: "Екешварі Радга" },
@@ -80,6 +80,8 @@ const d = {
   AnandiniPurna:            { gender: "матаджі", id: "AnandiniPurna", name: "Анандіні Пурна" },
   IrinaAntipenko:           { gender: "матаджі", id: "IrinaAntipenko", name: "Iрина Антипенко" },
   ElenaReshetnikova:        { gender: "матаджі", id: "ElenaReshetnikova", name: "Олена Решетнiкова" },
+  VasantaLakshmi:           { gender: "матаджі", id: "VasantaLakshmi", name: "Васанта Лакшмі" },
+  LalitaAmbika:             { gender: "матаджі", id: "LalitaAmbika", name: "Лаліта Амбіка" },
   
   ShyamaLila:               { gender: "прабгу", id: "ShyamaLila", name: "Ш'яма Ліла" },
   IvanChamkin:              { gender: "прабгу", id: "IvanChamkin", name: "Іван Чамкін" },
@@ -127,4 +129,5 @@ const d = {
   Damodara:                 { gender: "прабгу", id: "Damodara", name: "Дамодара" },
   Hanuman:                  { gender: "прабгу", id: "Hanuman", name: "Хануман" },
   VladislavEmets:           { gender: "прабгу", id: "VladislavEmets", name: "Владислав Ємець" },
+  Dmitriy:                  { gender: "прабгу", id: "Dmitriy", name: "Дмитро" },
 };
