@@ -10,7 +10,7 @@ const d = {
   IndulekhaGopi:            { gender: "матаджі", id: "IndulekhaGopi", name: "Індулекха Ґопі" },
   YaninaMelnik:             { gender: "матаджі", id: "YaninaMelnik", name: "Яніна Мельник" },
   ElenaTryndyk:             { gender: "матаджі", id: "ElenaTryndyk", name: "Олена Триндик" },
-  MadhuriNayika:            { gender: "матаджі", id: "MadhuriNayika", name: "Мадгурі Наїка" },
+  MadhuriNayika:            { gender: "матаджі", id: "MadhuriNayika", name: "Мадхурі Наїка" },
   LilaManjari:              { gender: "матаджі", id: "LilaManjari", name: "Ліла Манджарі" },
   GaurangiLila:             { gender: "матаджі", id: "GaurangiLila", name: "Ґауранґі Ліла" },
   YuliaLomaka:              { gender: "матаджі", id: "YuliaLomaka", name: "Юлія Ломака" },
@@ -82,6 +82,7 @@ const d = {
   ElenaReshetnikova:        { gender: "матаджі", id: "ElenaReshetnikova", name: "Олена Решетнiкова" },
   VasantaLakshmi:           { gender: "матаджі", id: "VasantaLakshmi", name: "Васанта Лакшмі" },
   LalitaAmbika:             { gender: "матаджі", id: "LalitaAmbika", name: "Лаліта Амбіка" },
+  KarolinaFilomonova:       { gender: "матаджі", id: "KarolinaFilomonova", name: "Кароліна Філомонова" },
   
   ShyamaLila:               { gender: "прабгу", id: "ShyamaLila", name: "Ш'яма Ліла" },
   IvanChamkin:              { gender: "прабгу", id: "IvanChamkin", name: "Іван Чамкін" },
