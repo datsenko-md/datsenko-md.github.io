@@ -86,6 +86,8 @@ const d = {
   TrilokiniLalita:          { gender: "матаджі", id: "TrilokiniLalita", name: "Трілокіні Лаліта" },
   NirmalaGayatri:           { gender: "матаджі", id: "NirmalaGayatri", name: "Нірмала Ґаятрі" },
   Alisa:                    { gender: "матаджі", id: "Alisa", name: "Аліса" },
+  NandaYashoda:             { gender: "матаджі", id: "NandaYashoda", name: "Нанда-Яшода" },
+  VarshanaRadhe:            { gender: "матаджі", id: "VarshanaRadhe", name: "Варшана Радге" },
   
   ShyamaLila:               { gender: "прабгу", id: "ShyamaLila", name: "Ш'яма Ліла" },
   IvanChamkin:              { gender: "прабгу", id: "IvanChamkin", name: "Іван Чамкін" },
