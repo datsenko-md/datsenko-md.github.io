@@ -88,8 +88,9 @@ const d = {
   Alisa:                    { gender: "матаджі", id: "Alisa", name: "Аліса" },
   NandaYashoda:             { gender: "матаджі", id: "NandaYashoda", name: "Нанда-Яшода" },
   VarshanaRadhe:            { gender: "матаджі", id: "VarshanaRadhe", name: "Варшана Радге" },
-  Khrystyna:                { gender: "матаджі", id: "Khrystyna", name: "Христина" },
+  KhrystynaLisogor:         { gender: "матаджі", id: "KhrystynaLisogor", name: "Христина Лісогор" },
   AnandiniKrishnaa:         { gender: "матаджі", id: "AnandiniKrishnaa", name: "Анандіні Крішнаа" },
+  TapatiGaurangi:           { gender: "матаджі", id: "TapatiGaurangi", name: "Тапаті Ґауранґі" },
   
   ShyamaLila:               { gender: "прабгу", id: "ShyamaLila", name: "Ш'яма Ліла" },
   IvanChamkin:              { gender: "прабгу", id: "IvanChamkin", name: "Іван Чамкін" },
