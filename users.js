@@ -138,7 +138,7 @@ const d = {
   Hanuman:                  { gender: "прабгу", id: "Hanuman", name: "Хануман" },
   VladislavEmets:           { gender: "прабгу", id: "VladislavEmets", name: "Владислав Ємець" },
   DmitriyRubets:            { gender: "прабгу", id: "DmitriyRubets", name: "Дмитро Рубець" },
-  Dmitriy:                  { gender: "прабгу", id: "Dmitriy", name: "Дмитро" },
+  DmitriyZinchenko:         { gender: "прабгу", id: "DmitriyZinchenko", name: "Дмитро Зiнченко" },
   RasaVarshi:               { gender: "прабгу", id: "RasaVarshi", name: "Раса-варші" },
   DamodarKumar:             { gender: "прабгу", id: "DamodarKumar", name: "Дамодар Кумар" },
 };
