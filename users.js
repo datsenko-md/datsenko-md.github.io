@@ -142,4 +142,5 @@ const d = {
   DmitriyZinchenko:         { gender: "прабгу", id: "DmitriyZinchenko", name: "Дмитро Зiнченко" },
   RasaVarshi:               { gender: "прабгу", id: "RasaVarshi", name: "Раса-варші" },
   DamodarKumar:             { gender: "прабгу", id: "DamodarKumar", name: "Дамодар Кумар" },
+  MadhyaPandava:            { gender: "прабгу", id: "MadhyaPandava", name: "Мадг'я  Пандава" },
 };
