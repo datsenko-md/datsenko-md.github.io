@@ -27,7 +27,7 @@ const d = {
   NikundzhaGopika:          { gender: "матаджі", id: "NikundzhaGopika", name: "Нікунджа Ґопіка" },
   MariyaSazonova:           { gender: "матаджі", id: "MariyaSazonova", name: "Марія Сазонова" },
   TariniKishori:            { gender: "матаджі", id: "TariniKishori", name: "Таріні Кішорі" },
-  AlinaZhukovich:           { gender: "матаджі", id: "IrinaZhukovich", name: "Ірина Жукович" },
+  IrinaZhukovich:           { gender: "матаджі", id: "IrinaZhukovich", name: "Ірина Жукович" },
   Vadzhayantimala:          { gender: "матаджі", id: "Vadzhayantimala", name: "Вайджаянті Мала" },
   ViktoriyaGida:            { gender: "матаджі", id: "ViktoriyaGida", name: "Вікторія Гида" },
   TatyanaCherevatenko:      { gender: "матаджі", id: "TatyanaCherevatenko", name: "Тетяна Череватенко" },
