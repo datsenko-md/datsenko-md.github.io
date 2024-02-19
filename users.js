@@ -99,6 +99,7 @@ const d = {
   ElenaKotova:              { gender: "матаджі", id: "ElenaKotova", name: "Олена Котова" },
   Nandarani:                { gender: "матаджі", id: "Nandarani", name: "Нандаранi" },
   Irina:                    { gender: "матаджі", id: "Irina", name: "Iрина" },
+  ViktoriyaVodopyanova:     { gender: "матаджі", id: "ViktoriyaVodopyanova", name: "Вiкторiя Водоп'янова" },
   
   ShyamaLila:               { gender: "прабгу", id: "ShyamaLila", name: "Ш'яма Ліла" },
   IvanChamkin:              { gender: "прабгу", id: "IvanChamkin", name: "Іван Чамкін" },
