@@ -10,7 +10,7 @@ const d = {
   IndulekhaGopi:            { gender: "матаджі", id: "IndulekhaGopi", name: "Індулекха Ґопі" },
   YaninaMelnik:             { gender: "матаджі", id: "YaninaMelnik", name: "Яніна Мельник" },
   ElenaTryndyk:             { gender: "матаджі", id: "ElenaTryndyk", name: "Олена Триндик" },
-  MadhuriNayika:            { gender: "матаджі", id: "MadhuriNayika", name: "Мадхурі Наїка" },
+  MadhuriNayika:            { gender: "матаджі", id: "MadhuriNayika", name: "Мадгурі Наїка" },
   LilaManjari:              { gender: "матаджі", id: "LilaManjari", name: "Ліла Манджарі" },
   GaurangiLila:             { gender: "матаджі", id: "GaurangiLila", name: "Ґауранґі Ліла" },
   YuliaLomaka:              { gender: "матаджі", id: "YuliaLomaka", name: "Юлія Ломака" },
@@ -104,9 +104,10 @@ const d = {
   ViktoriyaVodopyanova:     { gender: "матаджі", id: "ViktoriyaVodopyanova", name: "Вікторія Водоп'янова" },
   Yana:                     { gender: "матаджі", id: "Yana", name: "Яна" },
   AlyonaZaitseva:           { gender: "матаджі", id: "AlyonaZaitseva", name: "Альона Зайцева" },
-  MariiaTsukareva:          { gender: "матаджі", id: "MariiaTsukareva", name: "Марііа Цукарева" },
+  MariyaTsukareva:          { gender: "матаджі", id: "MariiaTsukareva", name: "Марія Цукарева" },
   VasantaViharini:          { gender: "матаджі", id: "VasantaViharini", name: "Васанта Віхаріні" },
   AmritaCaranani:           { gender: "матаджі", id: "AmritaCaranani", name: "Амріта Чаранані" },
+  LalitaVrindavani:         { gender: "матаджі", id: "LalitaVrindavani", name: "Лаліта Вріндавані" },
 
   ShyamaLila:               { gender: "прабгу", id: "ShyamaLila", name: "Ш'яма Ліла" },
   IvanChamkin:              { gender: "прабгу", id: "IvanChamkin", name: "Іван Чамкін" },
@@ -159,4 +160,6 @@ const d = {
   RasaVarshi:               { gender: "прабгу", id: "RasaVarshi", name: "Раса-варші" },
   DamodarKumar:             { gender: "прабгу", id: "DamodarKumar", name: "Дамодар Кумар" },
   MadhyaPandava:            { gender: "прабгу", id: "MadhyaPandava", name: "Мадг'я  Пандава" },
+  AravindaShyam:            { gender: "прабгу", id: "AravindaShyam", name: "Аравінда Ш'ям" },
+  Konstantin:               { gender: "прабгу", id: "Konstantin", name: "Костянтин" },
 };
